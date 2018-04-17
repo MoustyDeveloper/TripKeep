@@ -43,7 +43,7 @@ class TripsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
 
         let trip = Trips.getTrip(at: indexPath.row)!
-        cell.textLabel?.text = trip.tripDestination
+        cell.textLabel?.text = trip.tripDestination + String(trip.tripDuration)
         cell.detailTextLabel?.text = trip.tripDate.description
         cell.imageView?.image = trip.img
 
