@@ -12,6 +12,7 @@ class TripsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Trips.loadTrips()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +30,26 @@ class TripsViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Trips.trips.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
+
+        let trip = Trips.getTrip(at: indexPath.row)!
+        cell.textLabel?.text = trip.tripDestination
+        cell.detailTextLabel?.text = trip.tripDate.description
+        cell.imageView?.image = trip.img
 
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.
