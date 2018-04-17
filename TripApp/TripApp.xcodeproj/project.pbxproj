@@ -14,6 +14,8 @@
 		2214C7CD2085BD0D00E480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2214C7CB2085BD0D00E480CE /* LaunchScreen.storyboard */; };
 		2214C7D82085BD0D00E480CE /* TripAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C7D72085BD0D00E480CE /* TripAppTests.swift */; };
 		2214C7E32085BD0D00E480CE /* TripAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C7E22085BD0D00E480CE /* TripAppUITests.swift */; };
+		2214C7F12085C3B800E480CE /* TripsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C7F02085C3B800E480CE /* TripsViewControllerTableViewController.swift */; };
+		2214C7F32085C42600E480CE /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C7F22085C42600E480CE /* TripDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		2214C7DE2085BD0D00E480CE /* TripAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2214C7E22085BD0D00E480CE /* TripAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAppUITests.swift; sourceTree = "<group>"; };
 		2214C7E42085BD0D00E480CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2214C7F02085C3B800E480CE /* TripsViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		2214C7F22085C42600E480CE /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		2214C7B62085BD0D00E480CE = {
 			isa = PBXGroup;
 			children = (
+				2214C7F02085C3B800E480CE /* TripsViewControllerTableViewController.swift */,
+				2214C7F22085C42600E480CE /* TripDetailsViewController.swift */,
 				2214C7C12085BD0D00E480CE /* TripApp */,
 				2214C7D62085BD0D00E480CE /* TripAppTests */,
 				2214C7E12085BD0D00E480CE /* TripAppUITests */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2214C7F12085C3B800E480CE /* TripsViewControllerTableViewController.swift in Sources */,
 				2214C7C52085BD0D00E480CE /* ViewController.swift in Sources */,
+				2214C7F32085C42600E480CE /* TripDetailsViewController.swift in Sources */,
 				2214C7C32085BD0D00E480CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
